@@ -1,0 +1,10 @@
+<div>
+  <h1>Pick Ride</h1>
+  <input [(ngModel)]="employeeId" placeholder="Employee ID">
+  <ul>
+    <li *ngFor="let ride of rides">
+      {{ ride.vehicleType }} - {{ ride.vehicleNumber }} - {{ ride.pickUpPoint }} to {{ ride.destination }} - {{ ride.time | date:'shortTime' }}
+      <button (click)="pickRide(ride)">Pick Ride</button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,10 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+}
+.message {
+  margin-top: 10px;
+  color: green;
+}

@@ -1,0 +1,13 @@
+<div>
+  <h1>Ride List</h1>
+  <select (change)="onVehicleTypeChange($any($event.target).value)" >
+    <option value="">All</option>
+    <option value="Bike">Bike</option>
+    <option value="Car">Car</option>
+  </select>
+  <ul>
+    <li *ngFor="let ride of filteredRides">
+      {{ ride.vehicleType }} - {{ ride.vehicleNumber }} - {{ ride.pickUpPoint }} to {{ ride.destination }} - {{ ride.time | date:'shortTime' }}
+    </li>
+  </ul>
+</div>
