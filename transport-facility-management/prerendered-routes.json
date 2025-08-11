@@ -1,0 +1,7 @@
+{
+  "routes": [
+    "/add-ride",
+    "/pick-ride",
+    "/ride-list"
+  ]
+}
